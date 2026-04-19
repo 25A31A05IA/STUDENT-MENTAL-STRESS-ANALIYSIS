@@ -1,0 +1,26 @@
+Data Collection
+The system collects input from the user:
+Daily study hours
+Sleep hours
+Number of assignments
+Social/relaxation time
+Parameter Evaluation
+Each input is analyzed using predefined conditions:
+Higher study hours → increases stress
+Less sleep → increases stress
+More assignments → increases stress
+Less social time → increases stress
+Stress Score Calculation
+Each parameter is assigned a score (1 to 3) based on its impact
+All scores are added to compute a total stress score
+Stress Level Classification
+Based on the total score:
+Low Stress → Score ≤ 5
+Moderate Stress → Score between 6 and 9
+High Stress → Score > 9
+Result Display
+The system displays the stress score
+It also shows the stress level with a suggestion message
+Conclusion/Output
+Helps students understand their stress condition
+Encourages better time management, rest, and relaxation
