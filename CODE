@@ -1,0 +1,89 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate stress score
+int calculateStress(int studyHours, int sleepHours, int assignments, int socialTime)
+{
+    int stressScore = 0;
+
+    // Study hours effect
+    if (studyHours > 8)
+        stressScore += 3;
+    else if (studyHours > 5)
+        stressScore += 2;
+    else
+        stressScore += 1;
+
+    // Sleep effect
+    if (sleepHours < 5)
+        stressScore += 3;
+    else if (sleepHours < 7)
+        stressScore += 2;
+    else
+        stressScore += 1;
+
+    // Assignments pressure
+    if (assignments > 5)
+        stressScore += 3;
+    else if (assignments > 2)
+        stressScore += 2;
+    else
+        stressScore += 1;
+
+    // Social relaxation reduces stress
+    if (socialTime < 1)
+        stressScore += 3;
+    else if (socialTime < 2)
+        stressScore += 2;
+    else
+        stressScore += 1;
+
+    return stressScore;
+}
+
+// Function to display stress level
+void showResult(int score)
+{
+    cout << "\nStress Score: " << score << endl;
+
+    if (score <= 5)
+    {
+        cout << "Stress Level: LOW\n";
+        cout << "Keep maintaining a healthy balance!\n";
+    }
+    else if (score <= 9)
+    {
+        cout << "Stress Level: MODERATE\n";
+        cout << "Try better time management and relaxation.\n";
+    }
+    else
+    {
+        cout << "Stress Level: HIGH\n";
+        cout << "Take breaks, talk to someone, and rest well.\n";
+    }
+}
+
+int main()
+{
+    int studyHours, sleepHours, assignments, socialTime;
+
+    cout << "=== Student Mental Stress Analysis ===\n";
+
+    cout << "Enter daily study hours: ";
+    cin >> studyHours;
+
+    cout << "Enter daily sleep hours: ";
+    cin >> sleepHours;
+
+    cout << "Enter number of assignments: ";
+    cin >> assignments;
+
+    cout << "Enter social/relaxation time (hours): ";
+    cin >> socialTime;
+
+    int stressScore = calculateStress(studyHours, sleepHours, assignments, socialTime);
+
+    showResult(stressScore);
+
+    return 0;
+}
