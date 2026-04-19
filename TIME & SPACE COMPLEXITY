@@ -1,0 +1,15 @@
+....TIME COMPLEXITY....
+Your program performs a fixed number of operations:
+Takes 4 inputs
+Checks conditions using if-else (constant comparisons)
+Calculates score using simple additions
+Displays result
+There are no loops or recursion.
+-> Time Complexity = O(1) (Constant Time)
+This means execution time does not depend on input size.
+
+....SPACE COMPLEXITY....
+Your program uses:
+A few integer variables (studyHours, sleepHours, assignments, socialTime, stressScore)
+No extra memory like arrays, lists, or dynamic allocation
+-> Space Complexity = O(1) (Constant Space)
