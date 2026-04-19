@@ -1,0 +1,33 @@
+Step 1: Start
+Step 2: Declare variables
+        studyHours, sleepHours, assignments, socialTime, stressScore
+Step 3: Input values
+        Read studyHours
+        Read sleepHours
+        Read assignments
+        Read socialTime
+Step 4: Initialize
+        Set stressScore = 0
+Step 5: Check study hours
+        If studyHours > 8, add 3 to stressScore
+        Else if studyHours > 5, add 2
+        Else add 1
+Step 6: Check sleep hours
+        If sleepHours < 5, add 3 to stressScore
+        Else if sleepHours < 7, add 2
+        Else add 1
+Step 7: Check assignments
+        If assignments > 5, add 3 to stressScore
+        Else if assignments > 2, add 2
+        Else add 1
+Step 8: Check social/relaxation time
+        If socialTime < 1, add 3 to stressScore
+        Else if socialTime < 2, add 2
+        Else add 1
+Step 9: Display stress score
+        Print stressScore
+Step 10: Determine stress level
+        If stressScore <= 5, display LOW
+        Else if stressScore <= 9, display MODERATE
+        Else display HIGH
+Step 11: Stop
